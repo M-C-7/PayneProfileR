@@ -171,3 +171,8 @@ usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
 
 devtools::document()       # genera i file Rd dalla roxygen
 devtools::load_all()       # carica il pacchetto nel tuo ambiente R
+devtools::build_vignettes()
+
+vignette("payne-profile-vignette")
+browseURL("inst/doc/payne-profile-vignette.html")
+

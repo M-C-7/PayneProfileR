@@ -1,0 +1,57 @@
+---
+title: "Kill-off Profile Analysis using payne_profile()"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Kill-off Profile Analysis using payne_profile()}
+  %\VignetteEngine{rmarkdown::render}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(PayneProfileR)
+```
+
+## Introduction
+
+This vignette demonstrates how to use the `payne_profile()` function to analyze caprine dental wear data and generate kill-off profiles following Payne (1973), with options to visualize the Helmer et al. (2007) barplot style and ideal survival models.
+
+## Example Data
+
+```{r}
+data <- data.frame(
+  stage = c("A", "AB", "B", "C", "D", "E", "F", "CD", "DEF", "GHI", "EFG", "G"),
+  count = c(5, 4, 6, 3, 2, 3, 6, 5, 8, 4, 1, 4)
+)
+```
+
+## Standard Kill-off Profile
+
+```{r}
+res <- payne_profile(data)
+res$table
+res$barplot
+res$curve
+```
+
+## Helmer-style Barplot
+
+```{r}
+res_helmer <- payne_profile(data, ef_merge = TRUE)
+res_helmer$barplot_helmer
+```
+
+## Survival Curve with Ideal Strategies
+
+```{r}
+res_ideal <- payne_profile(data, add_ideal_curves = TRUE)
+res_ideal$ideal_curve
+```
+
+## References
+
+- Payne, S. (1973). Kill-off patterns in sheep and goats: the mandibles from Asvan Kale. Anatolian Studies, 23, 281–303.
+- Helmer, D., Gourichon, L., & Vila, E. (2007). The development of the exploitation of products from Capra and Ovis... Anthropozoologica, 42(2), 41–69.
