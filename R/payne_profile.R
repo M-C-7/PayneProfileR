@@ -164,5 +164,10 @@ print(risultato$ideal_curve)
 
 risultato <- payne_profile(dati, add_ideal_curves = TRUE)
 
+Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS" = "true")
+
+usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
+
+
 devtools::document()       # genera i file Rd dalla roxygen
 devtools::load_all()       # carica il pacchetto nel tuo ambiente R
