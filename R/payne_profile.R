@@ -1,5 +1,3 @@
-
-
 install.packages(c("devtools", "usethis"))
 usethis::use_git()
 usethis::use_github()
@@ -168,4 +166,3 @@ risultato <- payne_profile(dati, add_ideal_curves = TRUE)
 
 devtools::document()       # genera i file Rd dalla roxygen
 devtools::load_all()       # carica il pacchetto nel tuo ambiente R
-
