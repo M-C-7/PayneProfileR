@@ -16,3 +16,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/M-C-7/OCuw
 BugReports: https://github.com/M-C-7/OCuw/issues
+RoxygenNote: 7.3.2
