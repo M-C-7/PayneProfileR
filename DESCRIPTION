@@ -1,19 +1,13 @@
-Package: OCuw
-Type: Package
-Title: What the Package Does (Title Case)
+Package: PayneProfileR
+Title: Kill-Off Profile Analysis Based on Payne (1973)
 Version: 0.1.0
-Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Authors@R: person("IlTuoNome", email = "tua@email.it", role = c("aut", "cre"))
+Description: Tools for analyzing caprine dental wear stages and producing kill-off profiles.
+License: MIT
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/M-C-7/OCuw
-BugReports: https://github.com/M-C-7/OCuw/issues
 RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
