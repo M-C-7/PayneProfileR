@@ -11,3 +11,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/M-C-7/PayneProfileR
+BugReports: https://github.com/M-C-7/PayneProfileR/issues
