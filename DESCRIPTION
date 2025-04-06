@@ -1,12 +1,16 @@
 Package: PayneProfileR
 Title: Kill-Off Profile Analysis Based on Payne (1973)
 Version: 0.1.0
-Authors@R: person("IlTuoNome", email = "tua@email.it", role = c("aut", "cre"))
-Description: Tools for analyzing caprine dental wear stages and producing kill-off profiles.
+Authors@R: 
+    person("Matteo", "Cianfoni", email = "matteocianfoni1@gmail.com", role = c("aut", "cre"))
+Description: Provides tools to analyze caprine dental wear and generate kill-off profiles 
+    based on the method proposed by Sebastian Payne (1973). Includes graphical outputs, 
+    survival curve analysis, and Helmer-style barplot representation, with options 
+    to compare observed data to idealized herd management strategies (meat, milk, wool).
 License: MIT
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.1
 Suggests: 
     knitr,
     rmarkdown
